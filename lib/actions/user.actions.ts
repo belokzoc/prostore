@@ -1,7 +1,7 @@
 "use server"
 
 import { signIn, signOut } from "@/auth"
-import { isRedirectError } from "next/dist/client/components/redirect-error"
+import { isRedirectError } from "next/dist/client/components/redirect"
 import { signInFormSchema, signUpFormSchema } from "../validators"
 import { hash } from "../encrypt"
 import { prisma } from "@/db/prisma"
